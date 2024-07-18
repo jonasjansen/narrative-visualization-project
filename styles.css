@@ -1,0 +1,10 @@
+/* Add your styles here */
+.slider-container {
+    display: flex;
+    overflow: hidden;
+}
+.slide {
+    width: 1000px;
+    height: 1000px;
+    display: none;
+}
