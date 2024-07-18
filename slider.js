@@ -2,26 +2,63 @@
     This file implements the slider functionality for the slide show.
  */
 
-const slides = document.querySelectorAll('.slide');
-const prevButton = document.getElementById('prev');
-const nextButton = document.getElementById('next');
+let slideIndex = 1;
 
-let currentSlide = 0;
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("slide");
+    let dots = document.getElementsByClassName("dot");
 
-function showSlide() {
-    slides.forEach((slide, index) => {
-        slide.style.display = index === currentSlide ? 'block' : 'none';
-    });
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+
+    for (i = 0; i < slides.length; i++) {
+        slides[i].classList.remove("active");
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].classList.remove("active-dot");
+    }
+
+    slides[slideIndex-1].classList.add("active");
+    dots[slideIndex-1].classList.add("active-dot");
+
+    updateControls();
 }
 
-prevButton.addEventListener('click', () => {
-    currentSlide = Math.max(currentSlide - 1, 0);
-    showSlide();
+function plusSlides(n) {
+    if (n < 0 && slideIndex === 1 || n > 0 && slideIndex === document.getElementsByClassName('slide').length) {
+        return;
+    }
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function updateControls() {
+    let prev = document.querySelector('.prev');
+    let next = document.querySelector('.next');
+
+    if (slideIndex === 1) {
+        prev.classList.add('disabled');
+    } else {
+        prev.classList.remove('disabled');
+    }
+
+    if (slideIndex === document.getElementsByClassName('slide').length) {
+        next.classList.add('disabled');
+    } else {
+        next.classList.remove('disabled');
+    }
+}
+
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'ArrowLeft') {
+        plusSlides(-1);
+    } else if (event.key === 'ArrowRight') {
+        plusSlides(1);
+    }
 });
 
-nextButton.addEventListener('click', () => {
-    currentSlide = Math.min(currentSlide + 1, slides.length - 1);
-    showSlide();
-});
-
-showSlide();
+showSlides(slideIndex);

@@ -1,10 +1,119 @@
-/* Add your styles here */
-.slider-container {
+body {
+    font-family: Arial, sans-serif;
     display: flex;
-    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+h1 {
+    margin: 20px 0;
+}
+.header {
+    text-align: center;
+    align-items: center;
+    vertical-align: center;
+    margin-bottom: 40px;
+}
+
+.slideshow-container {
+    position: relative;
+    width: 90%;
+    max-width: 1600px;
 }
 .slide {
-    width: 1000px;
-    height: 1000px;
     display: none;
+    gap: 60px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 850px;
+    background: #f9f9f9;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    opacity: 0;
+    visibility: hidden;
+}
+.slide.active {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+}
+.text-container {
+    height: 800px;
+    padding-left: 40px;
+    overflow: auto;
+}
+.visual-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 800px;
+    padding-right: 40px;
+}
+.title {
+    flex: 1;
+    font-size: 36px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid grey;
+}
+.text {
+    flex: 1;
+    font-size: 20px;
+    text-align: justify;
+}
+.rectangle {
+    width: 800px;
+    height: 800px;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0,0,0,0.6);
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev {
+    left: 0;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+.dots-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.dot {
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    margin: 0 2px;
+    background-color: #bbb;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    transition: background-color 0.6s ease;
+}
+.active-dot, .dot:hover {
+    background-color: #717171;
+}
+.disabled {
+    cursor: not-allowed;
+    opacity: 0.3;
 }

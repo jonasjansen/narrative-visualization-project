@@ -1,0 +1,3 @@
+/*
+    This file implements the visuals for each slide.
+ */
