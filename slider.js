@@ -9,8 +9,12 @@ function showSlides(n) {
     let slides = document.getElementsByClassName("slide");
     let dots = document.getElementsByClassName("dot");
 
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
+    if (n > slides.length) {
+        slideIndex = 1
+    }
+    if (n < 1) {
+        slideIndex = slides.length
+    }
 
     for (i = 0; i < slides.length; i++) {
         slides[i].classList.remove("active");
@@ -25,8 +29,9 @@ function showSlides(n) {
     updateControls();
 }
 
-function plusSlides(n) {
-    if (n < 0 && slideIndex === 1 || n > 0 && slideIndex === document.getElementsByClassName('slide').length) {
+function moveSlides(n) {
+    if (n < 0 && slideIndex === 1 ||
+        n > 0 && slideIndex === document.getElementsByClassName('slide').length) {
         return;
     }
     showSlides(slideIndex += n);
@@ -55,9 +60,9 @@ function updateControls() {
 
 document.addEventListener('keydown', function(event) {
     if (event.key === 'ArrowLeft') {
-        plusSlides(-1);
+        moveSlides(-1);
     } else if (event.key === 'ArrowRight') {
-        plusSlides(1);
+        moveSlides(1);
     }
 });
 
