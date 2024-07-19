@@ -35,11 +35,12 @@
             </div>
         </div>
         <div class="visual-container">
+
             <svg id="visual-1" class="rectangle">
             </svg>
         </div>
     </div>
-    <div class="slide">
+    <div class="slide active">
         <div class="text-container">
             <div class="title">Slide 2</div>
             <div class="text">
@@ -60,8 +61,31 @@
             </div>
         </div>
         <div class="visual-container">
-            <svg class="rectangle" style="fill: blue;">
-                <rect width="100%" height="100%"></rect>
+            <div class="action-toolbar">
+                <div class="choose-source">
+                    <div class="button reset active" onclick="showHappinessHistogram(this)">Happiness</div>
+                    <div class="button" onclick="showProsperityHistogram(this)">Prosperity</div>
+                </div>
+                <div id="filter-happiness" class="filter happiness">
+                    <div class="button reset active" onclick="filterHappinessDataByCategory(this, 'all')">All</div>
+                    <div class="button africa" onclick="filterHappinessDataByCategory(this, '0')">Africa</div>
+                    <div class="button asia" onclick="filterHappinessDataByCategory(this, '1')">Asia</div>
+                    <div class="button europe" onclick="filterHappinessDataByCategory(this, '2')">Europe</div>
+                    <div class="button north-america" onclick="filterHappinessDataByCategory(this, '3')">North America</div>
+                    <div class="button oceania" onclick="filterHappinessDataByCategory(this, '4')">Oceania</div>
+                    <div class="button south-america" onclick="filterHappinessDataByCategory(this, '5')">South America</div>
+                </div>
+                <div id="filter-prosperity" class="filter prosperity">
+                    <div class="button reset active" onclick="filterProsperityDataByCategory(this, 'all')">All</div>
+                    <div class="button africa" onclick="filterProsperityDataByCategory(this, '0')">Africa</div>
+                    <div class="button asia" onclick="filterProsperityDataByCategory(this, '1')">Asia</div>
+                    <div class="button europe" onclick="filterProsperityDataByCategory(this, '2')">Europe</div>
+                    <div class="button north-america" onclick="filterProsperityDataByCategory(this, '3')">North America</div>
+                    <div class="button oceania" onclick="filterProsperityDataByCategory(this, '4')">Oceania</div>
+                    <div class="button south-america" onclick="filterProsperityDataByCategory(this, '5')">South America</div>
+                </div>
+            </div>
+            <svg id="visual-2" class="rectangle">
             </svg>
         </div>
     </div>
@@ -156,6 +180,6 @@
     <div class="dot" onclick="currentSlide(5)">5</div>
 </div>
 <script src="slider.js"></script>
-<script src="visuals.js"></script>
+<script src="visuals-histogram.js"></script>
 </body>
 </html>
