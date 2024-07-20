@@ -35,7 +35,29 @@
             </div>
         </div>
         <div class="visual-container">
+            <!-- TODO: Add proper styling. -->
+            <div class="dropdown">
+                <button id="dropdownMenuButton" class="btn btn-secondary dropdown-toggle" type="button">
+                    All Political Regimes
+                </button>
+                <div class="dropdown-menu">
+                    <div class="dropdown-item" data-value="-1">All Political Regimes</div>
+                    <div class="dropdown-item" data-value="3">Liberal democracy</div>
+                    <div class="dropdown-item" data-value="2">Electoral democracy</div>
+                    <div class="dropdown-item" data-value="1">Electoral autocracy</div>
+                    <div class="dropdown-item" data-value="0">Closed autocracy</div>
+                </div>
+            </div>
 
+            <div>
+                <button class="button region" data-region="-1">All Regions</button>
+                <button class="button region africa" data-region="0" onclick="activateButton(this)">Africa</button>
+                <button class="button region asia" data-region="1" onclick="activateButton(this)">Asia</button>
+                <button class="button region europe" data-region="2" onclick="activateButton(this)">Europe</button>
+                <button class="button region north-america" data-region="3" onclick="activateButton(this)">North America</button>
+                <button class="button region oceania" data-region="4" onclick="activateButton(this)">Oceania</button>
+                <button class="button region south-america" data-region="5" onclick="activateButton(this)">South America</button>
+            </div>
             <svg id="visual-1" class="rectangle">
             </svg>
         </div>
@@ -180,6 +202,9 @@
     <div class="dot" onclick="currentSlide(5)">5</div>
 </div>
 <script src="slider.js"></script>
+<script src="var.js"></script>
 <script src="visuals-histogram.js"></script>
+<script src="visuals-scatter.js"></script>
+<script src="init.js"></script>
 </body>
 </html>

@@ -1,16 +1,5 @@
-/*
-    This file implements the visuals for each slide.
-*/
-// set the dimensions and margins of the graph
-const margin = {top: 20, right: 20, bottom: 20, left: 40}
-const width = 800 - margin.left - margin.right
-const height = 800 - margin.top - margin.bottom;
 
-async function init() {
-    await showHappinessHistogram();
-}
-
-async function getData(type) {
+async function getHistogramData(type) {
     const data = await d3.csv("data.csv");
     if (type === 'happiness') {
         return data.map(d => ({x: +d.happiness, category: d.region_cat, country: d.country}));
@@ -18,7 +7,6 @@ async function getData(type) {
         return data.map(d => ({x: +d.prosperity, category: d.region_cat, country: d.country}));
     }
 }
-
 
 function activateButton(button) {
     const buttons = button.parentElement.querySelectorAll('.button');
@@ -35,7 +23,7 @@ async function showHappinessHistogram(button) {
         activateButton(button)
     }
 
-    const data = await getData('happiness');
+    const data = await getHistogramData('happiness');
     showStackedHistogram(data, 12, "#visual-2");
 }
 
@@ -48,18 +36,10 @@ async function showProsperityHistogram(button) {
         activateButton(button)
     }
 
-    const data = await getData('prosperity');
+    const data = await getHistogramData('prosperity');
     showStackedHistogram(data, 150, "#visual-2");
 }
 
-const categoryColors = {
-    0: '#FF851B', // africa
-    1: '#2ECC40', // asia
-    2: '#0074D9', // europe
-    3: '#FF4136', // north america
-    4: '#39CCCC', // oceania
-    5: '#B10DC9'  // south-america
-};
 
 async function filterHappinessDataByCategory(button, category) {
     if (button) {
@@ -69,7 +49,7 @@ async function filterHappinessDataByCategory(button, category) {
     if (category === 'all') {
         await showHappinessHistogram();
     } else {
-        const data = await getData('happiness');
+        const data = await getHistogramData('happiness');
         const filteredData = data.filter(d => d.category === category);
         showStackedHistogram(filteredData, 12, "#visual-2");
     }
@@ -82,7 +62,7 @@ async function filterProsperityDataByCategory(button, category) {
     if (category === 'all') {
         await showProsperityHistogram();
     } else {
-        const data = await getData('prosperity');
+        const data = await getHistogramData('prosperity');
         const filteredData = data.filter(d => d.category === category);
         showStackedHistogram(filteredData, 150, "#visual-2");
     }
@@ -221,5 +201,3 @@ function updateHistogram(svg, data, domainLimit) {
                 .style("opacity", 0)
         })
 }
-
-init().then(() => console.log("Finished creating visual."));

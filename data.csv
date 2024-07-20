@@ -1,128 +1,128 @@
-,country,prosperity,political_regime,happiness,population,region,region_cat
-0,Denmark,6.0,Liberal democracy,7.586,5910913,Europe,2
-1,Sweden,6.83,Liberal democracy,7.395,10612086,Europe,2
-2,Norway,7.25,Liberal democracy,7.315,5474360,Europe,2
-3,Finland,8.0,Liberal democracy,7.804,5545475,Europe,2
-4,Switzerland,6.75,Liberal democracy,7.24,8796669,Europe,2
-5,Netherlands,9.08,Liberal democracy,7.403,17618299,Europe,2
-6,Luxembourg,11.09,Liberal democracy,7.228,654768,Europe,2
-7,Iceland,12.59,Liberal democracy,7.53,375318,Europe,2
-8,Germany,12.66,Liberal democracy,6.892,83294633,Europe,2
-9,New Zealand,17.33,Liberal democracy,7.123,5228100,Oceania,4
-10,Ireland,14.75,Liberal democracy,6.911,5056935,Europe,2
-11,United Kingdom,16.17,Liberal democracy,6.796,67736802,Europe,2
-12,Canada,17.42,Liberal democracy,6.961,38781291,North America,3
-13,Austria,16.75,Electoral democracy,7.097,8958960,Europe,2
-14,Australia,18.0,Liberal democracy,7.095,26439111,Oceania,4
-15,Japan,23.58,Liberal democracy,6.129,123294513,Asia,1
-16,Singapore,22.77,Electoral autocracy,6.587,6014723,Asia,1
-17,Belgium,20.42,Liberal democracy,6.859,11686140,Europe,2
-18,United States,26.31,Liberal democracy,6.894,339996563,North America,3
-19,Estonia,23.23,Liberal democracy,6.455,1322765,Europe,2
-20,France,24.5,Liberal democracy,6.661,64756584,Europe,2
-21,Spain,25.0,Liberal democracy,6.436,47519628,Europe,2
-22,Portugal,29.69,Electoral democracy,5.968,10247605,Europe,2
-23,Slovenia,27.0,Electoral democracy,6.65,2119675,Europe,2
-24,Malta,32.0,Electoral democracy,6.3,535064,Europe,2
-25,South Korea,33.59,Liberal democracy,5.951,51784059,Asia,1
-26,Italy,31.77,Liberal democracy,6.405,58870762,Europe,2
-27,Latvia,36.75,Liberal democracy,6.213,1830211,Europe,2
-28,Lithuania,40.34,Electoral democracy,6.763,2718352,Europe,2
-29,Israel,41.84,Electoral democracy,7.473,9174520,Asia,1
-30,Cyprus,38.16,Electoral democracy,6.13,1260138,Europe,2
-31,Slovakia,38.16,Electoral democracy,6.469,5795199,Europe,2
-32,Chile,42.38,Liberal democracy,6.334,19629590,South America,5
-33,Poland,39.91,Electoral democracy,6.26,41026067,Europe,2
-34,Uruguay,43.53,Liberal democracy,6.494,3423108,South America,5
-35,Costa Rica,41.59,Liberal democracy,6.609,5212173,South America,5
-36,Greece,48.75,Electoral democracy,5.931,10341277,Europe,2
-37,Croatia,49.84,Electoral democracy,6.125,4008617,Europe,2
-38,Hungary,52.0,Electoral autocracy,6.041,10156239,Europe,2
-39,Malaysia,52.0,Electoral democracy,6.012,34308525,Asia,1
-40,United Arab Emirates,54.59,Closed autocracy,6.571,9516871,Asia,1
-41,Romania,57.0,Electoral democracy,6.589,19892812,Europe,2
-42,Mauritius,59.16,Electoral autocracy,5.902,1300557,Africa,0
-43,Bulgaria,56.47,Electoral democracy,5.466,6687717,Europe,2
-44,Montenegro,61.38,Electoral democracy,5.722,626485,Europe,2
-45,Panama,58.91,Electoral democracy,6.265,4468087,South America,5
-46,Serbia,69.75,Electoral autocracy,6.144,7149077,Europe,2
-47,Georgia,73.44,Electoral democracy,5.109,3728282,Europe,2
-48,China,64.0,Closed autocracy,5.818,1425671352,Asia,1
-49,North Macedonia,69.81,Electoral democracy,5.254,2085679,Europe,2
-50,Jamaica,75.31,Electoral democracy,5.703,2825544,North America,3
-51,Argentina,70.75,Electoral democracy,6.024,45773884,South America,5
-52,Peru,71.25,Electoral democracy,5.526,34352719,South America,5
-53,Armenia,75.75,Electoral democracy,5.342,2777970,Asia,1
-54,Bahrain,73.81,Closed autocracy,6.173,1485509,Asia,1
-55,Indonesia,72.0,Electoral democracy,5.277,277534122,Asia,1
-56,Thailand,71.75,Electoral autocracy,5.843,71801279,Asia,1
-57,Albania,75.5,Electoral democracy,5.277,2832439,Europe,2
-58,Brazil,76.75,Electoral democracy,6.125,216422446,South America,5
-59,Dominican Republic,76.69,Electoral democracy,5.569,11332972,North America,3
-60,Kazakhstan,82.56,Electoral autocracy,6.144,19606633,Asia,1
-61,Moldova,82.38,Electoral democracy,5.819,3435931,Europe,2
-62,Mexico,77.25,Electoral democracy,6.33,128455567,North America,3
-63,Bosnia and Herzegovina,86.25,Electoral democracy,5.633,3210847,Europe,2
-64,Vietnam,78.25,Closed autocracy,5.763,98858950,Asia,1
-65,Ukraine,83.94,Electoral autocracy,5.071,36744634,Europe,2
-66,South Africa,82.38,Electoral democracy,5.275,60414495,Africa,0
-67,Paraguay,80.31,Electoral democracy,5.738,6861524,South America,5
-68,Russia,81.5,Electoral autocracy,5.661,144444359,Europe,2
-69,Saudi Arabia,82.38,Closed autocracy,6.463,36947025,Asia,1
-70,Colombia,78.5,Electoral democracy,5.63,52085168,South America,5
-71,Botswana,87.75,Electoral democracy,3.435,2675352,Africa,0
-72,Philippines,82.5,Electoral autocracy,5.523,117337368,Asia,1
-73,Ecuador,87.25,Electoral democracy,5.559,18190484,South America,5
-74,Jordan,90.5,Closed autocracy,4.12,11337052,Asia,1
-75,Mongolia,90.56,Electoral democracy,5.84,3447157,Asia,1
-76,Namibia,89.81,Electoral democracy,4.631,2604172,Africa,0
-77,Sri Lanka,87.25,Electoral democracy,4.442,21893579,Asia,1
-78,Kyrgyzstan,95.25,Electoral autocracy,5.825,6735347,Asia,1
-79,Morocco,96.56,Closed autocracy,4.903,37840044,Africa,0
-80,El Salvador,98.94,Electoral autocracy,6.122,6364943,North America,3
-81,Ghana,96.25,Electoral democracy,4.605,34121985,Africa,0
-82,Tunisia,102.19,Electoral autocracy,4.497,12458223,Africa,0
-83,Uzbekistan,97.25,Closed autocracy,6.014,35163944,Asia,1
-84,Guatemala,98.75,Electoral democracy,6.15,18092026,North America,3
-85,Senegal,95.25,Electoral democracy,4.855,17763163,Africa,0
-86,India,101.19,Electoral autocracy,4.036,1428627663,Asia,1
-87,Honduras,99.25,Electoral democracy,6.023,10593798,North America,3
-88,Bolivia,104.25,Electoral democracy,5.684,12388571,South America,5
-89,Kenya,100.81,Electoral democracy,4.487,55100586,Africa,0
-90,Algeria,110.5,Electoral autocracy,5.329,45606480,Africa,0
-91,Nepal,106.38,Electoral democracy,5.36,30896590,Asia,1
-92,Lebanon,114.31,Electoral autocracy,2.392,5353930,Asia,1
-93,Tajikistan,108.75,Electoral autocracy,5.33,10143543,Asia,1
-94,Nicaragua,110.06,Electoral autocracy,6.259,7046310,North America,3
-95,Laos,109.62,Closed autocracy,5.111,7633779,Asia,1
-96,Tanzania,112.31,Electoral autocracy,3.694,67438106,Africa,0
-97,Cambodia,115.06,Electoral autocracy,4.393,16944826,Asia,1
-98,Gabon,119.69,Closed autocracy,5.035,2436566,Africa,0
-99,Egypt,119.19,Electoral autocracy,4.17,112716598,Africa,0
-100,Benin,115.06,Electoral autocracy,4.374,13712828,Africa,0
-101,Bangladesh,120.75,Electoral autocracy,4.282,172954319,Asia,1
-102,Malawi,115.62,Electoral democracy,3.495,20931751,Africa,0
-103,Iran,122.38,Closed autocracy,4.876,89172767,Asia,1
-104,Zambia,117.62,Electoral democracy,3.982,20569737,Africa,0
-105,Comoros,119.75,Electoral autocracy,3.545,852075,Africa,0
-106,Uganda,119.69,Electoral autocracy,4.432,48582334,Africa,0
-107,Togo,129.62,Electoral autocracy,4.137,9053799,Africa,0
-108,Burkina Faso,124.06,Closed autocracy,4.638,23251485,Africa,0
-109,Pakistan,125.81,Electoral autocracy,4.555,240485658,Asia,1
-110,Madagascar,126.06,Electoral autocracy,4.019,30325732,Africa,0
-111,Liberia,124.75,Electoral democracy,4.042,5418377,Africa,0
-112,Zimbabwe,132.88,Electoral autocracy,3.204,16665409,Africa,0
-113,Iraq,128.5,Electoral autocracy,4.941,45504560,Asia,1
-114,Guinea,125.75,Closed autocracy,5.072,14190612,Africa,0
-115,Nigeria,130.12,Electoral autocracy,4.981,223804632,Africa,0
-116,Myanmar,126.5,Closed autocracy,4.372,54577997,Asia,1
-117,Sierra Leone,130.38,Electoral autocracy,3.138,8791092,Africa,0
-118,Venezuela,121.19,Electoral autocracy,5.211,28838499,South America,5
-119,Cameroon,132.38,Electoral autocracy,4.973,28647293,Africa,0
-120,Mozambique,132.0,Electoral autocracy,4.954,33897354,Africa,0
-121,Mali,131.38,Closed autocracy,4.198,23293698,Africa,0
-122,Niger,130.75,Closed autocracy,4.501,27202843,Africa,0
-123,Ethiopia,132.88,Electoral autocracy,4.091,126527060,Africa,0
-124,Mauritania,139.88,Electoral autocracy,4.724,4862989,Africa,0
-125,Chad,150.75,Closed autocracy,4.397,18278568,Africa,0
-126,Afghanistan,154.25,Closed autocracy,1.859,42239854,Asia,1
+,country,prosperity,political_regime,happiness,population,region,region_cat,political_regime_cat
+0,Denmark,6.0,Liberal democracy,7.586,5910913,Europe,2,3
+1,Sweden,6.83,Liberal democracy,7.395,10612086,Europe,2,3
+2,Norway,7.25,Liberal democracy,7.315,5474360,Europe,2,3
+3,Finland,8.0,Liberal democracy,7.804,5545475,Europe,2,3
+4,Switzerland,6.75,Liberal democracy,7.24,8796669,Europe,2,3
+5,Netherlands,9.08,Liberal democracy,7.403,17618299,Europe,2,3
+6,Luxembourg,11.09,Liberal democracy,7.228,654768,Europe,2,3
+7,Iceland,12.59,Liberal democracy,7.53,375318,Europe,2,3
+8,Germany,12.66,Liberal democracy,6.892,83294633,Europe,2,3
+9,New Zealand,17.33,Liberal democracy,7.123,5228100,Oceania,4,3
+10,Ireland,14.75,Liberal democracy,6.911,5056935,Europe,2,3
+11,United Kingdom,16.17,Liberal democracy,6.796,67736802,Europe,2,3
+12,Canada,17.42,Liberal democracy,6.961,38781291,North America,3,3
+13,Austria,16.75,Electoral democracy,7.097,8958960,Europe,2,2
+14,Australia,18.0,Liberal democracy,7.095,26439111,Oceania,4,3
+15,Japan,23.58,Liberal democracy,6.129,123294513,Asia,1,3
+16,Singapore,22.77,Electoral autocracy,6.587,6014723,Asia,1,1
+17,Belgium,20.42,Liberal democracy,6.859,11686140,Europe,2,3
+18,United States,26.31,Liberal democracy,6.894,339996563,North America,3,3
+19,Estonia,23.23,Liberal democracy,6.455,1322765,Europe,2,3
+20,France,24.5,Liberal democracy,6.661,64756584,Europe,2,3
+21,Spain,25.0,Liberal democracy,6.436,47519628,Europe,2,3
+22,Portugal,29.69,Electoral democracy,5.968,10247605,Europe,2,2
+23,Slovenia,27.0,Electoral democracy,6.65,2119675,Europe,2,2
+24,Malta,32.0,Electoral democracy,6.3,535064,Europe,2,2
+25,South Korea,33.59,Liberal democracy,5.951,51784059,Asia,1,3
+26,Italy,31.77,Liberal democracy,6.405,58870762,Europe,2,3
+27,Latvia,36.75,Liberal democracy,6.213,1830211,Europe,2,3
+28,Lithuania,40.34,Electoral democracy,6.763,2718352,Europe,2,2
+29,Israel,41.84,Electoral democracy,7.473,9174520,Asia,1,2
+30,Cyprus,38.16,Electoral democracy,6.13,1260138,Europe,2,2
+31,Slovakia,38.16,Electoral democracy,6.469,5795199,Europe,2,2
+32,Chile,42.38,Liberal democracy,6.334,19629590,South America,5,3
+33,Poland,39.91,Electoral democracy,6.26,41026067,Europe,2,2
+34,Uruguay,43.53,Liberal democracy,6.494,3423108,South America,5,3
+35,Costa Rica,41.59,Liberal democracy,6.609,5212173,South America,5,3
+36,Greece,48.75,Electoral democracy,5.931,10341277,Europe,2,2
+37,Croatia,49.84,Electoral democracy,6.125,4008617,Europe,2,2
+38,Hungary,52.0,Electoral autocracy,6.041,10156239,Europe,2,1
+39,Malaysia,52.0,Electoral democracy,6.012,34308525,Asia,1,2
+40,United Arab Emirates,54.59,Closed autocracy,6.571,9516871,Asia,1,0
+41,Romania,57.0,Electoral democracy,6.589,19892812,Europe,2,2
+42,Mauritius,59.16,Electoral autocracy,5.902,1300557,Africa,0,1
+43,Bulgaria,56.47,Electoral democracy,5.466,6687717,Europe,2,2
+44,Montenegro,61.38,Electoral democracy,5.722,626485,Europe,2,2
+45,Panama,58.91,Electoral democracy,6.265,4468087,South America,5,2
+46,Serbia,69.75,Electoral autocracy,6.144,7149077,Europe,2,1
+47,Georgia,73.44,Electoral democracy,5.109,3728282,Europe,2,2
+48,China,64.0,Closed autocracy,5.818,1425671352,Asia,1,0
+49,North Macedonia,69.81,Electoral democracy,5.254,2085679,Europe,2,2
+50,Jamaica,75.31,Electoral democracy,5.703,2825544,North America,3,2
+51,Argentina,70.75,Electoral democracy,6.024,45773884,South America,5,2
+52,Peru,71.25,Electoral democracy,5.526,34352719,South America,5,2
+53,Armenia,75.75,Electoral democracy,5.342,2777970,Asia,1,2
+54,Bahrain,73.81,Closed autocracy,6.173,1485509,Asia,1,0
+55,Indonesia,72.0,Electoral democracy,5.277,277534122,Asia,1,2
+56,Thailand,71.75,Electoral autocracy,5.843,71801279,Asia,1,1
+57,Albania,75.5,Electoral democracy,5.277,2832439,Europe,2,2
+58,Brazil,76.75,Electoral democracy,6.125,216422446,South America,5,2
+59,Dominican Republic,76.69,Electoral democracy,5.569,11332972,North America,3,2
+60,Kazakhstan,82.56,Electoral autocracy,6.144,19606633,Asia,1,1
+61,Moldova,82.38,Electoral democracy,5.819,3435931,Europe,2,2
+62,Mexico,77.25,Electoral democracy,6.33,128455567,North America,3,2
+63,Bosnia and Herzegovina,86.25,Electoral democracy,5.633,3210847,Europe,2,2
+64,Vietnam,78.25,Closed autocracy,5.763,98858950,Asia,1,0
+65,Ukraine,83.94,Electoral autocracy,5.071,36744634,Europe,2,1
+66,South Africa,82.38,Electoral democracy,5.275,60414495,Africa,0,2
+67,Paraguay,80.31,Electoral democracy,5.738,6861524,South America,5,2
+68,Russia,81.5,Electoral autocracy,5.661,144444359,Europe,2,1
+69,Saudi Arabia,82.38,Closed autocracy,6.463,36947025,Asia,1,0
+70,Colombia,78.5,Electoral democracy,5.63,52085168,South America,5,2
+71,Botswana,87.75,Electoral democracy,3.435,2675352,Africa,0,2
+72,Philippines,82.5,Electoral autocracy,5.523,117337368,Asia,1,1
+73,Ecuador,87.25,Electoral democracy,5.559,18190484,South America,5,2
+74,Jordan,90.5,Closed autocracy,4.12,11337052,Asia,1,0
+75,Mongolia,90.56,Electoral democracy,5.84,3447157,Asia,1,2
+76,Namibia,89.81,Electoral democracy,4.631,2604172,Africa,0,2
+77,Sri Lanka,87.25,Electoral democracy,4.442,21893579,Asia,1,2
+78,Kyrgyzstan,95.25,Electoral autocracy,5.825,6735347,Asia,1,1
+79,Morocco,96.56,Closed autocracy,4.903,37840044,Africa,0,0
+80,El Salvador,98.94,Electoral autocracy,6.122,6364943,North America,3,1
+81,Ghana,96.25,Electoral democracy,4.605,34121985,Africa,0,2
+82,Tunisia,102.19,Electoral autocracy,4.497,12458223,Africa,0,1
+83,Uzbekistan,97.25,Closed autocracy,6.014,35163944,Asia,1,0
+84,Guatemala,98.75,Electoral democracy,6.15,18092026,North America,3,2
+85,Senegal,95.25,Electoral democracy,4.855,17763163,Africa,0,2
+86,India,101.19,Electoral autocracy,4.036,1428627663,Asia,1,1
+87,Honduras,99.25,Electoral democracy,6.023,10593798,North America,3,2
+88,Bolivia,104.25,Electoral democracy,5.684,12388571,South America,5,2
+89,Kenya,100.81,Electoral democracy,4.487,55100586,Africa,0,2
+90,Algeria,110.5,Electoral autocracy,5.329,45606480,Africa,0,1
+91,Nepal,106.38,Electoral democracy,5.36,30896590,Asia,1,2
+92,Lebanon,114.31,Electoral autocracy,2.392,5353930,Asia,1,1
+93,Tajikistan,108.75,Electoral autocracy,5.33,10143543,Asia,1,1
+94,Nicaragua,110.06,Electoral autocracy,6.259,7046310,North America,3,1
+95,Laos,109.62,Closed autocracy,5.111,7633779,Asia,1,0
+96,Tanzania,112.31,Electoral autocracy,3.694,67438106,Africa,0,1
+97,Cambodia,115.06,Electoral autocracy,4.393,16944826,Asia,1,1
+98,Gabon,119.69,Closed autocracy,5.035,2436566,Africa,0,0
+99,Egypt,119.19,Electoral autocracy,4.17,112716598,Africa,0,1
+100,Benin,115.06,Electoral autocracy,4.374,13712828,Africa,0,1
+101,Bangladesh,120.75,Electoral autocracy,4.282,172954319,Asia,1,1
+102,Malawi,115.62,Electoral democracy,3.495,20931751,Africa,0,2
+103,Iran,122.38,Closed autocracy,4.876,89172767,Asia,1,0
+104,Zambia,117.62,Electoral democracy,3.982,20569737,Africa,0,2
+105,Comoros,119.75,Electoral autocracy,3.545,852075,Africa,0,1
+106,Uganda,119.69,Electoral autocracy,4.432,48582334,Africa,0,1
+107,Togo,129.62,Electoral autocracy,4.137,9053799,Africa,0,1
+108,Burkina Faso,124.06,Closed autocracy,4.638,23251485,Africa,0,0
+109,Pakistan,125.81,Electoral autocracy,4.555,240485658,Asia,1,1
+110,Madagascar,126.06,Electoral autocracy,4.019,30325732,Africa,0,1
+111,Liberia,124.75,Electoral democracy,4.042,5418377,Africa,0,2
+112,Zimbabwe,132.88,Electoral autocracy,3.204,16665409,Africa,0,1
+113,Iraq,128.5,Electoral autocracy,4.941,45504560,Asia,1,1
+114,Guinea,125.75,Closed autocracy,5.072,14190612,Africa,0,0
+115,Nigeria,130.12,Electoral autocracy,4.981,223804632,Africa,0,1
+116,Myanmar,126.5,Closed autocracy,4.372,54577997,Asia,1,0
+117,Sierra Leone,130.38,Electoral autocracy,3.138,8791092,Africa,0,1
+118,Venezuela,121.19,Electoral autocracy,5.211,28838499,South America,5,1
+119,Cameroon,132.38,Electoral autocracy,4.973,28647293,Africa,0,1
+120,Mozambique,132.0,Electoral autocracy,4.954,33897354,Africa,0,1
+121,Mali,131.38,Closed autocracy,4.198,23293698,Africa,0,0
+122,Niger,130.75,Closed autocracy,4.501,27202843,Africa,0,0
+123,Ethiopia,132.88,Electoral autocracy,4.091,126527060,Africa,0,1
+124,Mauritania,139.88,Electoral autocracy,4.724,4862989,Africa,0,1
+125,Chad,150.75,Closed autocracy,4.397,18278568,Africa,0,0
+126,Afghanistan,154.25,Closed autocracy,1.859,42239854,Asia,1,0
