@@ -1,10 +1,9 @@
-
 async function getHistogramData(type) {
     const data = await d3.csv("data.csv");
     if (type === 'happiness') {
-        return data.map(d => ({x: +d.happiness, category: d.region_cat, country: d.country}));
+        return data.map(d => ({ x: +d.happiness, category: d.region_cat, country: d.country }));
     } else if (type === 'prosperity') {
-        return data.map(d => ({x: +d.prosperity, category: d.region_cat, country: d.country}));
+        return data.map(d => ({ x: +d.prosperity, category: d.region_cat, country: d.country }));
     }
 }
 
@@ -40,7 +39,6 @@ async function showProsperityHistogram(button) {
     showStackedHistogram(data, 150, "#visual-2");
 }
 
-
 async function filterHappinessDataByCategory(button, category) {
     if (button) {
         activateButton(button);
@@ -67,6 +65,7 @@ async function filterProsperityDataByCategory(button, category) {
         showStackedHistogram(filteredData, 150, "#visual-2");
     }
 }
+
 function showStackedHistogram(data, domainLimit, svgId) {
     const svg = d3.select(svgId).select("svg");
 
@@ -79,10 +78,27 @@ function showStackedHistogram(data, domainLimit, svgId) {
 
         newSvg.append("g")
             .attr("class", "x-axis")
-            .attr("transform", `translate(0, ${height})`);
+            .attr("transform", `translate(0, ${height - 50})`);  // Move x-axis higher
 
         newSvg.append("g")
             .attr("class", "y-axis");
+
+        // Add x-axis label
+        newSvg.append("text")
+            .attr("class", "x-axis-label")
+            .attr("text-anchor", "middle")
+            .attr("x", width / 2)
+            .attr("y", height + margin.bottom - 30)  // Adjusted for new x-axis position
+            .text("Value");
+
+        // Add y-axis label
+        newSvg.append("text")
+            .attr("class", "y-axis-label")
+            .attr("text-anchor", "middle")
+            .attr("transform", "rotate(-90)")
+            .attr("x", -height / 2)
+            .attr("y", -margin.left + 70)  // Move y-axis label closer to the axis
+            .text("Frequency");
 
         return updateHistogram(newSvg, data, domainLimit);
     }
@@ -121,13 +137,13 @@ function updateHistogram(svg, data, domainLimit) {
                 values[d.category] = 1;
             }
         });
-        return {x0: bin.x0, x1: bin.x1, values: values, countries: bin.map(d => d.country)};
+        return { x0: bin.x0, x1: bin.x1, values: values, countries: bin.map(d => d.country) };
     });
 
     const series = stack(stackedData);
 
     const y = d3.scaleLinear()
-        .range([height, 0])
+        .range([height - 50, 0])
         .domain([0, d3.max(stackedData, d => d3.sum(categories, key => d.values[key]))]);
 
     svg.select(".y-axis")
@@ -181,23 +197,23 @@ function updateHistogram(svg, data, domainLimit) {
         .style("color", "white");
 
     svg.selectAll("rect")
-        .on("mouseover", function(event, d) {
+        .on("mouseover", function (event, d) {
             const countries = d.data.countries.join(", ");
             tooltip.transition()
                 .duration(100)
                 .style("opacity", .9);
             tooltip.html(`Countries: ${countries}`)
-                .style("left", (event.x+10) + "px")
+                .style("left", (event.x + 10) + "px")
                 .style("top", (event.y) + "px")
         })
-        .on("mousemove", function(event) {
+        .on("mousemove", function (event) {
             tooltip.style("left", (event.pageX + 5) + "px")
                 .style("top", (event.pageY - 28) + "px");
         })
-        .on("mouseout", function() {
+        .on("mouseout", function () {
             tooltip
                 .transition()
                 .duration(100)
                 .style("opacity", 0)
-        })
+        });
 }
