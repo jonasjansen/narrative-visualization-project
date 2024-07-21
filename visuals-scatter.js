@@ -12,7 +12,77 @@ async function getScatterData() {
     }));
 }
 
+function drawScatterAnnotations() {
+    const svg = d3.select("#visual-3");
+
+    const x1 = 600;
+    const y1 = 500;
+    const annotation1 = svg.append("g")
+        .attr("class", "annotation");
+
+    annotation1.append("text")
+        .attr("class", "annotation")
+        .attr("x", x1)
+        .attr("y", y1)
+        .text("Afghanistan");
+
+    annotation1.append("line")
+        .attr("class", "annotation-line")
+        .attr("x1", x1 + 40)
+        .attr("y1", y1 + 5)
+        .attr("x2", 676)
+        .attr("y2", 561)
+        .attr("stroke", "black")
+        .attr("stroke-width", 1);
+
+    const x2 = 225;
+    const y2 = 150;
+    const annotation2 = svg.append("g")
+        .attr("class", "annotation");
+
+    annotation2.append("text")
+        .attr("class", "annotation")
+        .attr("x", x2)
+        .attr("y", y2)
+        .text("USA");
+
+    annotation2.append("line")
+        .attr("class", "annotation-line")
+        .attr("x1", x2 + 15)
+        .attr("y1", y2 + 3)
+        .attr("x2", 200)
+        .attr("y2", 170)
+        .attr("stroke", "black")
+        .attr("stroke-width", 1);
+
+    const x3 = 150;
+    const y3 = 75;
+    const annotation3 = svg.append("g")
+        .attr("class", "annotation");
+
+    annotation3.append("text")
+        .attr("class", "annotation")
+        .attr("x", x3)
+        .attr("y", y3)
+        .text("Finland");
+
+    annotation3.append("line")
+        .attr("class", "annotation-line")
+        .attr("x1", x3 + 25)
+        .attr("y1", y3 + 3)
+        .attr("x2", 131)
+        .attr("y2", 98)
+        .attr("stroke", "black")
+        .attr("stroke-width", 1);
+}
+
+function removeScatterAnnotation() {
+    const svg = d3.select("#visual-3");
+    svg.selectAll(".annotation").remove();
+}
+
 function updateScatterPlot(svg, data, x, y, tooltip) {
+    removeScatterAnnotation();
     const circles = svg.selectAll("circle")
         .data(data, d => d.country);
 
@@ -31,7 +101,7 @@ function updateScatterPlot(svg, data, x, y, tooltip) {
             tooltip.transition()
                 .duration(200)
                 .style("opacity", .9);
-            tooltip.html(`Country: ${d.country}`)
+            tooltip.html(`${d.country} </br> Happiness: ${d.happiness} </br> Prosperity: ${d.prosperity}`)
                 .style("left", (event.pageX + 5) + "px")
                 .style("top", (event.pageY - 28) + "px");
         })

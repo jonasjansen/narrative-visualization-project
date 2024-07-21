@@ -13,7 +13,71 @@ function activateButton(button) {
     button.classList.add('active');
 }
 
+function drawHistogramAnnotations() {
+    const svg = d3.select("#visual-2").select("svg");
+
+    const annotation1 = svg.append("g")
+        .attr("class", "annotation");
+
+    annotation1.append("text")
+        .attr("class", "annotation")
+        .attr("x", 170)
+        .attr("y", 550)
+        .text("Afghanistan");
+
+    annotation1.append("line")
+        .attr("class", "annotation-line")
+        .attr("x1", 210)
+        .attr("y1", 555)
+        .attr("x2", 255 - 35)
+        .attr("y2", 570 + 45)
+        .attr("stroke", "black")
+        .attr("stroke-width", 1);
+
+    const annotation2 = svg.append("g")
+        .attr("class", "annotation");
+
+    annotation2.append("text")
+        .attr("class", "annotation")
+        .attr("x", 570)
+        .attr("y", 370)
+        .text("USA");
+
+    annotation2.append("line")
+        .attr("class", "annotation-line")
+        .attr("x1", 570 + 15)
+        .attr("y1", 375)
+        .attr("x2", 505)
+        .attr("y2", 420)
+        .attr("stroke", "black")
+        .attr("stroke-width", 1);
+
+    const annotation3 = svg.append("g")
+        .attr("class", "annotation");
+
+    annotation3.append("text")
+        .attr("class", "annotation")
+        .attr("x", 600)
+        .attr("y", 550)
+        .text("Finland");
+
+    annotation3.append("line")
+        .attr("class", "annotation-line")
+        .attr("x1", 600 + 25)
+        .attr("y1", 555)
+        .attr("x2", 560)
+        .attr("y2", 550 + 45)
+        .attr("stroke", "black")
+        .attr("stroke-width", 1);
+}
+
+function removeHistogramAnnotation() {
+    const svg = d3.select("#visual-2").select("svg");
+    svg.selectAll(".annotation").remove();
+}
+
 async function showHappinessHistogram(button) {
+    removeHistogramAnnotation()
     document.getElementById("filter-happiness").classList.add("active");
     document.getElementById("filter-prosperity").classList.remove("active");
     activateButton(document.getElementById("filter-happiness").firstElementChild)
@@ -27,6 +91,7 @@ async function showHappinessHistogram(button) {
 }
 
 async function showProsperityHistogram(button) {
+    removeHistogramAnnotation()
     document.getElementById("filter-prosperity").classList.add("active");
     document.getElementById("filter-happiness").classList.remove("active");
     activateButton(document.getElementById("filter-prosperity").firstElementChild)
@@ -40,6 +105,7 @@ async function showProsperityHistogram(button) {
 }
 
 async function filterHappinessDataByCategory(button, category) {
+    removeHistogramAnnotation()
     if (button) {
         activateButton(button);
     }
@@ -54,6 +120,7 @@ async function filterHappinessDataByCategory(button, category) {
 }
 
 async function filterProsperityDataByCategory(button, category) {
+    removeHistogramAnnotation()
     if (button) {
         activateButton(button);
     }
