@@ -66,15 +66,17 @@ function applyFilters(data) {
 }
 
 function onPoliticalRegimeChange(data, svg, x, y, tooltip) {
+
     return function() {
         selectedRegime = +d3.select(this).attr("data-value");
         const filteredData = applyFilters(data);
         updateScatterPlot(svg, filteredData, x, y, tooltip);
-        setActiveDropdownItem(this);
+        setActiveScatterDropdownItem(this);
     };
 }
 
 function onRegionChange(svg, data, x, y, tooltip) {
+
     return function() {
         selectedRegion = +d3.select(this).attr("data-region");
         updateScatterPlot(svg, applyFilters(data), x, y, tooltip);
@@ -84,7 +86,7 @@ function onRegionChange(svg, data, x, y, tooltip) {
 
 async function createScatterPlot() {
     const data = await getScatterData();
-    const svg = d3.select("#visual-1");
+    const svg = d3.select("#visual-3");
 
     const x = d3.scaleLinear()
         .domain([d3.min(data, d => d.prosperity) - 1, d3.max(data, d => d.prosperity) + 1])
@@ -125,13 +127,13 @@ async function createScatterPlot() {
 
     updateScatterPlot(svg, data, x, y, tooltip);
 
-    d3.selectAll(".dropdown-item").on("click", onPoliticalRegimeChange(data, svg, x, y, tooltip));
-    d3.selectAll(".button.region").on("click", onRegionChange(svg, data, x, y, tooltip));
+    d3.select("#slide-3").selectAll(".dropdown-item").on("click", onPoliticalRegimeChange(data, svg, x, y, tooltip));
+    d3.select("#slide-3").selectAll(".button.region").on("click", onRegionChange(svg, data, x, y, tooltip));
 }
 
-function setActiveDropdownItem(element) {
-    d3.selectAll(".dropdown-item").classed("active", false);
+function setActiveScatterDropdownItem(element) {
+    d3.select("#slide-3").selectAll(".dropdown-item").classed("active", false);
     d3.select(element).classed("active", true);
     const selectedValue = d3.select(element).text();
-    d3.select("#dropdownMenuButton").text(selectedValue);
+    d3.select("#dropdownMenuButtonScatter").text(selectedValue);
 }

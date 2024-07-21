@@ -1,7 +1,7 @@
 // set the dimensions and margins of the graph
-const margin = {top: 20, right: 0, bottom: 20, left: 50}
-const width = 800 - margin.left - margin.right
-const height = 800 - margin.top - margin.bottom;
+let margin = {top: 20, right: 0, bottom: 20, left: 50}
+let width = 800 - margin.left - margin.right
+let height = 800 - margin.top - margin.bottom;
 
 const categoryColors = {
     0: '#FF851B', // africa

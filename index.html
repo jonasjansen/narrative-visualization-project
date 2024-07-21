@@ -14,7 +14,7 @@
 </div>
 
 <div class="slideshow-container">
-    <div class="slide active">
+    <div id="slide-1" class="slide active">
         <div class="text-container">
             <div class="title">Slide 1</div>
             <div class="text">
@@ -34,35 +34,9 @@
                 labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
             </div>
         </div>
-        <div class="visual-container">
-            <!-- TODO: Add proper styling. -->
-            <div class="dropdown">
-                <button id="dropdownMenuButton" class="btn btn-secondary dropdown-toggle" type="button">
-                    All Political Regimes
-                </button>
-                <div class="dropdown-menu">
-                    <div class="dropdown-item" data-value="-1">All Political Regimes</div>
-                    <div class="dropdown-item" data-value="3">Liberal democracy</div>
-                    <div class="dropdown-item" data-value="2">Electoral democracy</div>
-                    <div class="dropdown-item" data-value="1">Electoral autocracy</div>
-                    <div class="dropdown-item" data-value="0">Closed autocracy</div>
-                </div>
-            </div>
 
-            <div>
-                <button class="button region" data-region="-1">All Regions</button>
-                <button class="button region africa" data-region="0" onclick="activateButton(this)">Africa</button>
-                <button class="button region asia" data-region="1" onclick="activateButton(this)">Asia</button>
-                <button class="button region europe" data-region="2" onclick="activateButton(this)">Europe</button>
-                <button class="button region north-america" data-region="3" onclick="activateButton(this)">North America</button>
-                <button class="button region oceania" data-region="4" onclick="activateButton(this)">Oceania</button>
-                <button class="button region south-america" data-region="5" onclick="activateButton(this)">South America</button>
-            </div>
-            <svg id="visual-1" class="rectangle">
-            </svg>
-        </div>
     </div>
-    <div class="slide active">
+    <div id="slide-2" class="slide active">
         <div class="text-container">
             <div class="title">Slide 2</div>
             <div class="text">
@@ -85,11 +59,12 @@
         <div class="visual-container">
             <div class="action-toolbar">
                 <div class="choose-source">
+                    <div class="label">Select a dataset: </div>
                     <div class="button reset active" onclick="showHappinessHistogram(this)">Happiness</div>
                     <div class="button" onclick="showProsperityHistogram(this)">Prosperity</div>
                 </div>
                 <div id="filter-happiness" class="filter happiness">
-                    <div class="button reset active" onclick="filterHappinessDataByCategory(this, 'all')">All</div>
+                    <div class="button reset active" onclick="filterHappinessDataByCategory(this, 'all')">All Regions</div>
                     <div class="button africa" onclick="filterHappinessDataByCategory(this, '0')">Africa</div>
                     <div class="button asia" onclick="filterHappinessDataByCategory(this, '1')">Asia</div>
                     <div class="button europe" onclick="filterHappinessDataByCategory(this, '2')">Europe</div>
@@ -98,7 +73,7 @@
                     <div class="button south-america" onclick="filterHappinessDataByCategory(this, '5')">South America</div>
                 </div>
                 <div id="filter-prosperity" class="filter prosperity">
-                    <div class="button reset active" onclick="filterProsperityDataByCategory(this, 'all')">All</div>
+                    <div class="button reset active" onclick="filterProsperityDataByCategory(this, 'all')">All Regions</div>
                     <div class="button africa" onclick="filterProsperityDataByCategory(this, '0')">Africa</div>
                     <div class="button asia" onclick="filterProsperityDataByCategory(this, '1')">Asia</div>
                     <div class="button europe" onclick="filterProsperityDataByCategory(this, '2')">Europe</div>
@@ -111,7 +86,7 @@
             </svg>
         </div>
     </div>
-    <div class="slide">
+    <div id="slide-3" class="slide">
         <div class="text-container">
             <div class="title">Slide 3</div>
             <div class="text">
@@ -132,12 +107,36 @@
             </div>
         </div>
         <div class="visual-container">
-            <svg class="rectangle" style="fill: green;">
-                <rect width="100%" height="100%"></rect>
+            <div class="dropdown-container">
+                <label for="dropdownMenuButtonScatter">Select a political regime:</label>
+                <div class="dropdown">
+                    <button id="dropdownMenuButtonScatter" class="button dropdown-toggle" type="button">
+                        All Political Regimes
+                    </button>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-item" data-value="-1">All Political Regimes</div>
+                        <div class="dropdown-item" data-value="3">Liberal democracy</div>
+                        <div class="dropdown-item" data-value="2">Electoral democracy</div>
+                        <div class="dropdown-item" data-value="1">Electoral autocracy</div>
+                        <div class="dropdown-item" data-value="0">Closed autocracy</div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <button class="button region scatter all-regions active" data-region="-1">All Regions</button>
+                <button class="button region scatter africa" data-region="0" onclick="activateButton(this)">Africa</button>
+                <button class="button region scatter asia" data-region="1" onclick="activateButton(this)">Asia</button>
+                <button class="button region scatter europe" data-region="2" onclick="activateButton(this)">Europe</button>
+                <button class="button region scatter north-america" data-region="3" onclick="activateButton(this)">North America</button>
+                <button class="button region scatter oceania" data-region="4" onclick="activateButton(this)">Oceania</button>
+                <button class="button region scatter south-america" data-region="5" onclick="activateButton(this)">South America</button>
+            </div>
+            <svg id="visual-3" class="rectangle">
             </svg>
         </div>
     </div>
-    <div class="slide">
+    <div id="slide-4" class="slide">
         <div class="text-container">
             <div class="title">Slide 4</div>
             <div class="text">
@@ -158,12 +157,35 @@
             </div>
         </div>
         <div class="visual-container">
-            <svg class="rectangle" style="fill: yellow;">
-                <rect width="100%" height="100%"></rect>
-            </svg>
+            <div class="dropdown-container">
+                <label for="dropdownMenuButtonHeat">Select a political regime:</label>
+                <div class="dropdown">
+                    <button id="dropdownMenuButtonHeat" class="button dropdown-toggle" type="button">
+                        All Political Regimes
+                    </button>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-item" data-value="-1">All Political Regimes</div>
+                        <div class="dropdown-item" data-value="3">Liberal democracy</div>
+                        <div class="dropdown-item active" data-value="2">Electoral democracy</div>
+                        <div class="dropdown-item" data-value="1">Electoral autocracy</div>
+                        <div class="dropdown-item" data-value="0">Closed autocracy</div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <button class="button region all-regions active" data-region="-1" onclick="activateButton(this)">All Regions</button>
+                <button class="button region africa" data-region="0" onclick="activateButton(this)">Africa</button>
+                <button class="button region asia" data-region="1" onclick="activateButton(this)">Asia</button>
+                <button class="button region europe" data-region="2" onclick="activateButton(this)">Europe</button>
+                <button class="button region north-america" data-region="3" onclick="activateButton(this)">North America</button>
+                <button class="button region oceania" data-region="4" onclick="activateButton(this)">Oceania</button>
+                <button class="button region south-america" data-region="5" onclick="activateButton(this)">South America</button>
+            </div>
+            <svg id="visual-4" class="rectangle"></svg>
         </div>
     </div>
-    <div class="slide">
+    <div id="slide-5" class="slide">
         <div class="text-container">
             <div class="title">Slide 5</div>
             <div class="text">
@@ -183,11 +205,6 @@
                 labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
             </div>
         </div>
-        <div class="visual-container">
-            <svg class="rectangle" style="fill: purple;">
-                <rect width="100%" height="100%"></rect>
-            </svg>
-        </div>
     </div>
 
     <a class="prev" onclick="moveSlides(-1)">&#10094;</a>
@@ -205,6 +222,7 @@
 <script src="var.js"></script>
 <script src="visuals-histogram.js"></script>
 <script src="visuals-scatter.js"></script>
+<script src="visuals-heatmap.js"></script>
 <script src="init.js"></script>
 </body>
 </html>
