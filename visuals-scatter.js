@@ -108,7 +108,7 @@ async function createScatterPlot() {
         .call(yAxis);
 
     svg.append("text")
-        .attr("transform", `translate(${width / 2},${height - margin.bottom + 40})`)
+        .attr("transform", `translate(${width / 2 + 75},${height - margin.bottom + 40})`)
         .style("text-anchor", "middle")
         .text("Prosperity");
 
